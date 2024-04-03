@@ -1,13 +1,17 @@
-header { 
-    text-align: center;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
-    
-
+header iframe{
+    width: 100%;
+    height: 200px;
+    background-color: ;
 }
 
-body {
-    background-color: aqua;
+nav iframe {
+    width: 20%;
+    height: 700px;
+    float: left;
+}
 
-
+main iframe {
+    float: left;
+    width: 79%;
+    height: 700px;
 }
