@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Formulario de Datos Personales</title>
+    <title>Adrian Ibarra Faura</title>
 </head>
 <body>
-    <h3>Formulario de Datos Personales</h3>
+    <h2>Formulario de Adrian Ibarra Faura </h2>
     <form action="procesa.php" method="post">
         <fieldset>
             <legend>Datos Personales</legend>
@@ -19,11 +19,11 @@
         </fieldset>
         <fieldset>
             <legend>Datos del vehículo</legend>
-            <label for="marca_modelo">Marca/Modelo:</label>
+            <label for="marca_modelo">Marca/modelo:</label>
             <input type="text" id="marca_modelo" name="marca_modelo" /><br />
             <label for="matricula">Matrícula:</label>
             <input type="text" id="matricula" name="matricula" /><br />
-            <label>Seleccione las características:</label><br />
+            <label>Características:</label><br />
             <input type="checkbox" id="utilitario" name="caracteristicas[]" value="utilitario" checked="checked" />
             <label for="utilitario">Utilitario</label><br />
             <input type="checkbox" id="alta_gama" name="caracteristicas[]" value="alta_gama" checked="checked" />
@@ -33,7 +33,7 @@
         </fieldset>
         <fieldset>
             <legend>Otros Datos</legend>
-            <label>Seleccione otros datos:</label><br />
+            <label>Otros datos:</label><br />
             <input type="checkbox" id="servofrenos" name="otros[]" value="servofrenos" checked="checked" />
             <label for="servofrenos">Servofrenos</label><br />
             <input type="checkbox" id="elevalunas" name="otros[]" value="elevalunas" checked="checked" />
