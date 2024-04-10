@@ -8,8 +8,8 @@ h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFFFCC;
-    margin: 2%;
-    padding: 2%;
+    margin: 0%;
+    padding: 5%;
     font-size: 200%;
     border: solid;
 }
@@ -17,8 +17,32 @@ h1 {
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFCC99 ;
+    border: solid;
+    border-color: #FF9900;
+}
 
--
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    text-size-adjust: 2;
+    color: green;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
 
 }
-`67d3sw1JGBYDESXW2
+
+li {
+    color: rgb(30, 108, 197);
+
+}
+
+p {
+    color: red;
+    background-color: #A9F5F2;
+
+}
