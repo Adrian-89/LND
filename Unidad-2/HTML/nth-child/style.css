@@ -20,15 +20,15 @@ tr:nth-child(3),
 tr:nth-child(5){
     background-color: #81DAF5;
 }
-.euroalineadoDcha{
+.euro.alineadoDcha{
     background-color:  #E6E6E6;
 }
-.dolaralineadoDcha{
+.dolar.alineadoDcha{
     background-color: #D8D8D8;
 }
-.libraalineadoDcha{
+.libra.alineadoDcha{
     background-color: #BDBDBD;
 }
-.yenalineadoDcha{
+.yen.alineadoDcha{
     background-color: #A4A4A4;
 }
