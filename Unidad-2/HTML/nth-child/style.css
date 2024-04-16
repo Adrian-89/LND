@@ -1,9 +1,10 @@
 body{
     background-color: antiquewhite;
+
 }
 
 #tablaCambio{
-    border: gray outset ;
+    border: outset ;
     margin-right: 300px;
     border-spacing: 5px;
 }
