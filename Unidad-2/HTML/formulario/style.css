@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  form {
+    width: 1900px;
+  }
+  h1 {
+      text-align: center;
+  }
+  .fieldset1 {
+background-color: #d7d5d5
+}
+.fieldset2 {
+  background-color:#efd7a0; 
+}
+.fieldset3 {
+  background-color: #f18c8c;
+}
+legend {
+background-color: white; 
+padding: 0 10px; 
+border: 1px solid black;
+}
