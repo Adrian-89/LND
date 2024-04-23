@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo 5</title>
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<frameset cols="20%,80%">
-    <frame src="sidebar.html" name="sidebar">
-    <frameset rows="30%,70%">
-        <frame src="aula_virtual.html" name="aula_virtual"</frame>
-    </frameset>
-</frameset>
-</html>
+<body>
+    <header>
+        <iframe name="Cabecera" src="header.html" ></iframe>
+    </header>
+    <nav>
+        <iframe src="sidebar.html"></iframe>
+    </nav>
+    <main>
+        <iframe name="URLFRAME" src="Main.html"></iframe>
+    </main>    
+    <footer>
+        <iframe src="footer.html"></iframe>
+    </footer>
+</body>
