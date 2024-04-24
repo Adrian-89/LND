@@ -1,0 +1,87 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a988e7;
+    color: #333;
+    margin: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.game {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.game h2 {
+    margin-bottom: 10px;
+}
+
+.game p {
+    margin-bottom: 15px;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.game a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer p{
+    background-color: aqua;
+
+}
+
+.game a:hover {
+    background-color: #555;
+}
