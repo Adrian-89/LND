@@ -1,3 +1,4 @@
+/* CSS */
 /* Reset de estilos */
 * {
     margin: 0;
@@ -7,9 +8,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #a988e7;
+    background-color: #f4f4f4;
     color: #333;
-    margin: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
 }
 
 header {
@@ -44,6 +48,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
 }
 
 .game {
@@ -68,20 +73,33 @@ main {
     margin-bottom: 10px;
 }
 
-.game a {
-    display: inline-block;
-    padding: 8px 20px;
+.game a.info-button {
+    display: inline-flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+    padding: 5px 10px; /* Reducir el padding para hacer el botón más pequeño */
     background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.footer p{
-    background-color: aqua;
-
+.game a.info-button img {
+    height: 30px; /* Tamaño de la imagen del logotipo */
+    margin-right: 5px; /* Espacio entre la imagen y el texto del botón */
 }
 
-.game a:hover {
+.game a.info-button span {
+    vertical-align: middle; /* Alinear el texto verticalmente con la imagen */
+    
+}
+
+.game a.info-button:hover {
     background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
