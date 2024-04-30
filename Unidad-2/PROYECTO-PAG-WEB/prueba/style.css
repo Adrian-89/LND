@@ -44,12 +44,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+
+/* CSS */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
-    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    flex-grow: 1;  /* Permite que el contenido principal ocupe el espacio restante */
+    max-height: calc(100vh - 150px); /* Establece el alto máximo, restando el alto del encabezado y pie de página */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede el alto máximo */
 }
 
 .game {
@@ -92,7 +96,6 @@ main {
 
 .game a.info-button span {
     vertical-align: middle; /* Alinear el texto verticalmente con la imagen */
-    
 }
 
 .game a.info-button:hover {
@@ -106,16 +109,27 @@ footer {
     text-align: center;
 }
 
-/* CSS */
-.game img[src="farcry6.webp"]{
-    width: 300px; 
-    height: 300px; 
+.previous-games {
+    margin-top: 20px; /* Espacio entre la sección de juegos actuales y anteriores */
+    text-align: center; /* Centra el contenido */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+    max-width: 600px; /* Ancho máximo de la tabla para centrarla */
 }
-.game img[src="r6.jpg"]{
-    width: 300px; 
-    height: 300px; 
+
+.separator {
+    border: none;
+    border-top: 2px solid #ccc; /* Color y grosor de la línea */
+    margin: 20px auto; /* Margen para el separador */
+    width: 80%; /* Ancho del separador */
 }
-.game img[src="gta.jpg"]{
-    width: 300px; 
-    height: 300px; 
+
+.previous-games table {
+    border-collapse: separate; /* Separación de bordes de las celdas */
+    border-spacing: 10px; /* Espacio entre celdas */
+}
+
+.previous-games th,
+.previous-games td {
+    padding: 10px; /* Espacio interno de las celdas */
 }
