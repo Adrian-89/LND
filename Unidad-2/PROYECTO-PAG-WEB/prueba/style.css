@@ -11,6 +11,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
+    text-align: left;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
@@ -52,7 +53,7 @@ main {
 }
 
 .game {
-    background-color: #fff;
+    background-color: #FFFFFF;
     padding: 20px;
     margin-bottom: 20px;
     width: 300px;
@@ -60,6 +61,7 @@ main {
 
 .game h2 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .game p {
@@ -102,4 +104,18 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* CSS */
+.game img[src="farcry6.webp"]{
+    width: 300px; 
+    height: 300px; 
+}
+.game img[src="r6.jpg"]{
+    width: 300px; 
+    height: 300px; 
+}
+.game img[src="gta.jpg"]{
+    width: 300px; 
+    height: 300px; 
 }
