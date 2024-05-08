@@ -1,0 +1,6 @@
+div:nth-child(odd) {
+    background-color: pink;
+}
+div:nth-child(even) {
+    background-color: yellow;
+}
