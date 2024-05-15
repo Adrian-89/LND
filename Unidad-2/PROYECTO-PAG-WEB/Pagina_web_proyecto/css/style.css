@@ -9,7 +9,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-
     color: #333;
     margin: 0;
     text-align: left;
@@ -22,15 +21,19 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    height: 113px;
+    
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
+    margin-top: 15px;
 }
 header h3 {
     margin: 0;
+    font-size: x-large;
     text-align: center;
 }
 
@@ -98,8 +101,12 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    
 }
 
+footer p {
+    margin-left: auto;
+}
 .previous-games {
     margin-top: 20px; /* Espacio entre la sección de juegos actuales y anteriores */
     text-align: center; /* Centra el contenido */
@@ -144,8 +151,9 @@ footer {
 }
 
 .sidebar ul li {
-    padding: 10px 0; /* Espaciado para cada elemento de la lista */
+    padding: 10px ; /* Espaciado para cada elemento de la lista */
     text-align: center; /* Centramos el texto horizontalmente */
+    margin-top: 20px;
 }
 
 .sidebar ul li a {
@@ -178,6 +186,13 @@ main {
     display: block; /* Muestra las sub-opciones cuando se pasa el ratón sobre la opción principal */
 }
 
+.logo {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    position: absolute; /* Establece la posición absoluta para poder posicionarla libremente */
+    top: 0px; /* Ajusta la distancia desde la parte superior */
+    left: 0px; /* Ajusta la distancia desde el borde izquierdo */
+}
 
 
 
