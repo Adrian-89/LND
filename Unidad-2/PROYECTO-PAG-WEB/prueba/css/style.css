@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+
     color: #333;
     margin: 0;
     text-align: left;
@@ -26,26 +27,16 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    text-align: center;
 }
-
-nav ul {
-    list-style-type: none;
+header h3 {
     margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    text-align: center;
 }
 
 
-/* CSS */
+
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -135,11 +126,57 @@ footer {
 }
 
 
+/* Agregamos estilos para la barra lateral de navegación */
+.sidebar {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    width: 200px; /* Ancho de la barra lateral */
+    position: fixed; /* Fijamos la barra lateral para que permanezca visible al desplazarse */
+    height: 100%; /* Alto de la barra lateral */
+    top: 0; /* La barra lateral comienza desde arriba */
+    left: 0; /* La barra lateral comienza desde la izquierda */
+    padding-top: 90px; /* Espaciado superior */
+}
+
+.sidebar ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0; /* Quitamos el relleno */
+}
+
+.sidebar ul li {
+    padding: 10px 0; /* Espaciado para cada elemento de la lista */
+    text-align: center; /* Centramos el texto horizontalmente */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Quitamos el subrayado del enlace */
+    color: #fff; /* Color del texto del enlace */
+    display: block; /* Convertimos el enlace en un bloque */
+}
+
+.sidebar ul li a:hover {
+    background-color: #555; /* Cambiamos el color de fondo al pasar el mouse */
+}
+
+/* Estilos adicionales para el contenido principal */
+header {
+    margin-left: 200px; /* Ajustamos el margen izquierdo para que no se superponga con la barra lateral */
+    padding: 10px; /* Añadimos un relleno para el encabezado */
+}
+
+main {
+    margin-left: 220px; /* Ajustamos el margen izquierdo para dejar espacio para la barra lateral */
+    padding: 20px; /* Añadimos un relleno para el contenido principal */
+}
 
 
+.sidebar .dropdown-menu {
+    display: none; /* Oculta las sub-opciones por defecto */
+}
 
-
-
+.sidebar .dropdown:hover .dropdown-menu {
+    display: block; /* Muestra las sub-opciones cuando se pasa el ratón sobre la opción principal */
+}
 
 
 
