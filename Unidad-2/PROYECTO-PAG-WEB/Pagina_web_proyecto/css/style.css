@@ -105,12 +105,12 @@ footer {
 }
 
 footer p {
-    margin-left: auto;
+    margin-left: 10%;
 }
 .previous-games {
     margin-top: 20px; /* Espacio entre la sección de juegos actuales y anteriores */
     text-align: center; /* Centra el contenido */
-    margin-left: auto; /* Centra horizontalmente */
+    margin-left: 41%; /* Centra horizontalmente */
     margin-right: auto; /* Centra horizontalmente */
     max-width: 600px; /* Ancho máximo de la tabla para centrarla */
 }
@@ -119,12 +119,12 @@ footer p {
     border: none;
     border-top: 2px solid #ccc; /* Color y grosor de la línea */
     margin: 20px auto; /* Margen para el separador */
-    width: 80%; /* Ancho del separador */
+    width: 100%; /* Ancho del separador */
 }
 
 .previous-games table {
     border-collapse: separate; /* Separación de bordes de las celdas */
-    border-spacing: 10px; /* Espacio entre celdas */
+    border-spacing:  10px; /* Espacio entre celdas */
 }
 
 .previous-games th,
