@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de la Página</title>
+    <link rel="shortcut icon" href="img/adrianlogo.png" type="image/x-icon">
     <style>
         header {
             /* Estilos específicos para el encabezado en aboutus.html */
-            background-color: #333; /* Cambia el color de fondo del encabezado */
+            background-color: #330075; /* Cambia el color de fondo del encabezado */
             color: #fff; /* Cambia el color del texto */
             padding: 10px 20px; /* Ajusta el relleno */
         }
@@ -19,21 +21,37 @@
             font-size: 24px;
             text-align: center; /* Alinea el texto a la izquierda */
             width: auto;
-
+            font-family: Arial, Helvetica, sans-serif;
         }
 
+        body {
+            background-image: url(https://imgs.search.brave.com/a5Xi8aG4b2L4JsLyBW1Y447umeUgTxzf_KMb0GgfCCo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9pbHVzdHJhY2lv/bi1qb3lzdGljay1n/YW1lcGFkLWNvbnRy/b2xhZG9yLWp1ZWdv/cy1jeWJlcnB1bmtf/NjkxNTYwLTU4MTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc); /* changed */
+            background-repeat: no-repeat; /* changed */
+            background-size: cover ; /*changed */
+        }
         main {
             /* Ajusta el espacio entre el contenido y el footer */
             margin-bottom: 100px; /* La altura del footer */
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             font-size: larger;
-        }
+            color: white;
+            backdrop-filter: blur(15px);
+            position: relative; /* Agrega posición relativa para alinear la imagen */
+}
 
+        body img {
+            max-width: 80%; /* Cambia el valor del ancho máximo según sea necesario */
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Establece márgenes superior e inferior automáticos para centrar la imagen horizontalmente */
+}
+
+ 
         footer {
             /* Estilos para el footer */
             font-family: Arial, sans-serif;
-            background-color: #333;
+            background-color: #330075;
             color: #fff;
             padding: 2px;
             text-align: center;
@@ -57,16 +75,18 @@
     </header>
 
     <main>
-        <!-- Aquí va el contenido específico de la página Acerca de Nosotros -->
+        <!-- Aquí va el contenido específico de la página Acerca de la Pagina -->
         <p>Esta página es dedicada subir los distintos videojuegos que las compañias como: Steam, Epic Games, Ubisoft y GoG ponen cada semana para reclamarlos
          de forma totalmente gratuita y para siempre para nuestras cuentas, el tiempo para reclamar los videojuegos  es limitado, algunas compañias como Steam
          o Ubisoft suelen dejar unos pocos dias para reclamarlos normalmente, otras como Epic Games, dejan un plazo de una semana para su reclamación excepto
          en navidad donde tendremos juego gratuito diario durante el periodo navideño, pero durante este periodo festivo tendremos que reclamar los videojuegos
          a diario, si no los llegamos a reclamar, ya no podremos reclamarlo y lo perderemos, dejando paso al siguiente juego a conseguir. </p>
+        <p>Además, tambien disponemos de un apartado dedicado a postear los videojuegos Triple AAA que si o si deberias de jugar una vez en la vida, algunos
+         son verdaderas obras de arte </p>
     </main>
+         <img src="img/amongus.gif" alt="deco">
 
     <footer>
-        <!-- Aquí puedes poner el pie de página común a todas tus páginas si lo deseas -->
         <p>&copy; 2024 | Adrián Ibarra Faura</p>
     </footer>
 </body>

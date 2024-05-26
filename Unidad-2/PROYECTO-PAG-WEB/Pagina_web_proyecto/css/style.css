@@ -8,7 +8,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(https://imgs.search.brave.com/a5Xi8aG4b2L4JsLyBW1Y447umeUgTxzf_KMb0GgfCCo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9pbHVzdHJhY2lv/bi1qb3lzdGljay1n/YW1lcGFkLWNvbnRy/b2xhZG9yLWp1ZWdv/cy1jeWJlcnB1bmtf/NjkxNTYwLTU4MTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc); /* changed */
+    background-repeat: no-repeat; /*changed*/
+    background-size: cover; /*changed */
     color: #333;
     margin: 0;
     text-align: left;
@@ -18,40 +20,48 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #330075;
     color: #fff;
-    padding: 10px 20px;
     height: 113px;
-    
+    margin-left: 200px; /* Ajustamos el margen izquierdo para que no se superponga con la barra lateral */
+    padding: 10px; /* AÃ±adimos un relleno para el encabezado */
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciamos los elementos */
+    align-items: center; /* Alineamos verticalmente al centro */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-title {
+    text-align: center;
+    color: white;
+    flex-grow: 1; /* Permite que el tÃ­tulo crezca para ocupar el espacio restante */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 15px;
-}
-header h3 {
-    margin: 0;
     font-size: x-large;
     text-align: center;
 }
-
-
-
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
-    flex-grow: 1;  /* Permite que el contenido principal ocupe el espacio restante */
-    max-height: calc(100vh - 150px); /* Establece el alto máximo, restando el alto del encabezado y pie de página */
-    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede el alto máximo */
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    max-height: calc(100vh - 150px); /* Establece el alto mÃ¡ximo, restando el alto del encabezado y pie de pÃ¡gina */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede el alto mÃ¡ximo */
+    margin-left: 200px; /* Ajustamos el margen izquierdo para que no se superponga con la barra lateral */
+    padding: 10px; /* AÃ±adimos un relleno para el encabezado */
 }
 
 .game {
-    background-color: #FFFFFF;
+    background-color: #330075;
     padding: 20px;
     margin-bottom: 20px;
     width: 300px;
@@ -60,10 +70,12 @@ main {
 .game h2 {
     margin-bottom: 10px;
     text-align: center;
+    color: white;
 }
 
 .game p {
     margin-bottom: 15px;
+    color: white;
 }
 
 .game img {
@@ -76,7 +88,7 @@ main {
 .game a.info-button {
     display: inline-flex; /* Usar flexbox para alinear elementos */
     align-items: center; /* Alinear elementos verticalmente */
-    padding: 5px 10px; /* Reducir el padding para hacer el botón más pequeño */
+    padding: 5px 10px; /* Reducir el padding para hacer el botÃ³n mÃ¡s pequeÃ±o */
     background-color: #333;
     color: #fff;
     text-decoration: none;
@@ -84,8 +96,8 @@ main {
 }
 
 .game a.info-button img {
-    height: 30px; /* Tamaño de la imagen del logotipo */
-    margin-right: 5px; /* Espacio entre la imagen y el texto del botón */
+    height: 30px; /* TamaÃ±o de la imagen del logotipo */
+    margin-right: 5px; /* Espacio entre la imagen y el texto del botÃ³n */
 }
 
 .game a.info-button span {
@@ -97,45 +109,49 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #330075;
     color: #fff;
     padding: 20px;
     text-align: center;
-    
 }
 
 footer p {
     margin-left: 10%;
 }
+
 .previous-games {
-    margin-top: 20px; /* Espacio entre la sección de juegos actuales y anteriores */
+    margin-top: 20px; /* Espacio entre la secciÃ³n de juegos actuales y anteriores */
     text-align: center; /* Centra el contenido */
     margin-left: 41%; /* Centra horizontalmente */
     margin-right: auto; /* Centra horizontalmente */
-    max-width: 600px; /* Ancho máximo de la tabla para centrarla */
+    max-width: 600px; /* Ancho mÃ¡ximo de la tabla para centrarla */
+    color: white;
 }
 
 .separator {
     border: none;
-    border-top: 2px solid #ccc; /* Color y grosor de la línea */
+    border-top: 2px solid #ccc; /* Color y grosor de la lÃ­nea */
     margin: 20px auto; /* Margen para el separador */
     width: 100%; /* Ancho del separador */
 }
 
 .previous-games table {
-    border-collapse: separate; /* Separación de bordes de las celdas */
-    border-spacing:  10px; /* Espacio entre celdas */
+    border-collapse: separate; /* SeparaciÃ³n de bordes de las celdas */
+    border-spacing: 10px; /* Espacio entre celdas */
+    backdrop-filter: blur(15px);
 }
 
 .previous-games th,
-.previous-games td {
+.previous-games td,
+.previous-games h2 {
     padding: 10px; /* Espacio interno de las celdas */
+    color: white;
+    backdrop-filter: blur(15px);
 }
 
-
-/* Agregamos estilos para la barra lateral de navegación */
+/* Estilos para la barra lateral de navegaciÃ³n */
 .sidebar {
-    background-color: #333; /* Color de fondo */
+    background-color: #330075; /* Color de fondo */
     color: #fff; /* Color del texto */
     width: 200px; /* Ancho de la barra lateral */
     position: fixed; /* Fijamos la barra lateral para que permanezca visible al desplazarse */
@@ -153,7 +169,7 @@ footer p {
 }
 
 .sidebar ul li {
-    padding: 10px ; /* Espaciado para cada elemento de la lista */
+    padding: 10px; /* Espaciado para cada elemento de la lista */
     text-align: center; /* Centramos el texto horizontalmente */
     margin-top: 30px; /* Separamos el texto hacia abajo */
 }
@@ -165,56 +181,82 @@ footer p {
 }
 
 .sidebar ul li a:hover {
-    background-color: #555; /* Cambiamos el color de fondo al pasar el mouse */
+    background-color: #6100e0; /* Cambiamos el color de fondo al pasar el mouse */
 }
 
 .sidebar-logo {
     width: 80px; /* Ancho de la imagen */
-    height: auto; /* Esto mantiene la proporción de la imagen */
-    position: absolute; /* Establece la posición absoluta para posicionarla libremente */
+    height: auto; /* Esto mantiene la proporciÃ³n de la imagen */
+    position: absolute; /* Establece la posiciÃ³n absoluta para posicionarla libremente */
     top: 20px; /* Ajusta la distancia desde la parte superior */
     left: 20px; /* Ajusta la distancia desde el borde izquierdo */
 }
-
-
-/* Estilos adicionales para el contenido principal */
-header {
-    margin-left: 200px; /* Ajustamos el margen izquierdo para que no se superponga con la barra lateral */
-    padding: 10px; /* Añadimos un relleno para el encabezado */
-}
-
-main {
-    margin-left: 220px; /* Ajustamos el margen izquierdo para dejar espacio para la barra lateral */
-    padding: 20px; /* Añadimos un relleno para el contenido principal */
-}
-
 
 .sidebar .dropdown-menu {
     display: none; /* Oculta las sub-opciones por defecto */
 }
 
 .sidebar .dropdown:hover .dropdown-menu {
-    display: block; /* Muestra las sub-opciones cuando se pasa el ratón sobre la opción principal */
+    display: block; /* Muestra las sub-opciones cuando se pasa el ratÃ³n sobre la opciÃ³n principal */
 }
 
 .logo {
-    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto; /* Esto mantiene la proporción de la imagen */
-    position: absolute; /* Establece la posición absoluta para poder posicionarla libremente */
+    width: 200px; /* Ajusta el tamaÃ±o de la imagen segÃºn sea necesario */
+    height: auto; /* Esto mantiene la proporciÃ³n de la imagen */
+    position: absolute; /* Establece la posiciÃ³n absoluta para poder posicionarla libremente */
     top: 0px; /* Ajusta la distancia desde la parte superior */
     left: 0px; /* Ajusta la distancia desde el borde izquierdo */
 }
 
+/* Estilos para el formulario de inicio de sesiÃ³n */
+.header-content .login {
+    background-color: #330075;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+}
 
+.header-content .login form {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos del formulario en fila */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
 
-.sidebar .newsletter {
+.header-content .login input[type="text"],
+.header-content .login input[type="password"] {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header-content .login input[type="submit"] {
     background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-content .login input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos para el formulario de suscripciÃ³n al boletÃ­n */
+.sidebar .newsletter {
+    background-color: #330075;
     padding: 20px;
     margin-top: auto;
 }
 
 .sidebar .newsletter h3 {
     margin-bottom: 10px;
+    text-align: center;
+    border: solid;
 }
 
 .sidebar .newsletter form {
@@ -231,8 +273,8 @@ main {
 }
 
 .sidebar .newsletter input[type="submit"] {
-    background-color: #ccc;
-    color: #555;
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -240,47 +282,40 @@ main {
 }
 
 .sidebar .newsletter input[type="submit"]:hover {
-    background-color: white;
+    background-color: #555;
 }
 
-
-.sidebar .newsletter h3 {
-    text-align: center;
-    border: solid;
-
+/* ANIMACIÃ“N*/
+.sidebar .circle-animation {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(219, 0, 219); /* Color de fondo del cÃ­rculo */
+    border-radius: 50%; /* Hace que el cÃ­rculo tenga forma redonda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveUpDown 2s infinite alternate; /* AnimaciÃ³n para mover hacia arriba y hacia abajo */
 }
 
+/* CSS para la animaciÃ³n del cÃ­rculo */
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+.sidebar .circle-animation {
+    position: absolute; /* Posiciona de manera absoluta */
+    top: 70%; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    z-index: 2; /* Asegura que estÃ© encima del boletÃ­n */
+    transform: translateY(-50%); /* Centra verticalmente */
+    animation: moveLeftToRight 5s infinite; /* Aplica la animaciÃ³n */
+}

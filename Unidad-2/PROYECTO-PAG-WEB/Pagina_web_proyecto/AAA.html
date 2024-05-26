@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos Triple AAA</title>
+    <link rel="shortcut icon" href="img/adrianlogo.png" type="image/x-icon">
+    <style>
+        /* CSS */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://imgs.search.brave.com/a5Xi8aG4b2L4JsLyBW1Y447umeUgTxzf_KMb0GgfCCo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9pbHVzdHJhY2lv/bi1qb3lzdGljay1n/YW1lcGFkLWNvbnRy/b2xhZG9yLWp1ZWdv/cy1jeWJlcnB1bmtf/NjkxNTYwLTU4MTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc); /* changed */
+    background-repeat: no-repeat; /*changed*/
+    background-size: cover ; /*changed */
+    color: #333;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
+}
+
+header {
+    background-color: #330075;
+    color: #fff;
+    height: 100px;
+    padding: 10px; /* Añadimos un relleno para el encabezado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px; /* CAMBIAR */
+}
+header h3 {
+    margin: 0;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-grow: 1;  /* Permite que el contenido principal ocupe el espacio restante */
+    max-height: calc(100vh - 150px); /* Establece el alto máximo, restando el alto del encabezado y pie de página */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede el alto máximo */
+    padding: 10px; /* Añadimos un relleno para el encabezado */
+}
+
+.game {
+    background-color: #330075;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.game h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.game p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.game a.info-button {
+    display: inline-flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+    padding: 5px 10px; /* Reducir el padding para hacer el botón más pequeño */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.game a.info-button img {
+    height: 30px; /* Tamaño de la imagen del logotipo */
+    margin-right: 5px; /* Espacio entre la imagen y el texto del botón */
+}
+
+.game a.info-button span {
+    vertical-align: middle; /* Alinear el texto verticalmente con la imagen */
+}
+
+.game a.info-button:hover {
+    background-color: #555;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #330075;
+    color: #fff;
+    padding: 20px;
+    text-align: center;   
+}
+
+.logo {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    position: absolute; /* Establece la posición absoluta para poder posicionarla libremente */
+    top: 0px; /* Ajusta la distancia desde la parte superior */
+    left: 0px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Videojuegos Triple AAA</h1>
+    </header>
+
+    <main>
+        <!-- Aquí va el contenido específico de la página Videojuegos Triple AAA -->
+        <section class="game">
+			<h2>The Last of Us™ Part I</h2>
+			<p> Experimenta la emocionante historia y los inolvidables personajes de The Last of Us, ganador de más de 200 premios Juego del Año.
+                En una civilización devastada donde se enfrentan infectados e insensibilizados sobrevivientes, alguien contrata a Joel,
+                el cansado protagonista, para que escabulla en secreto a Ellie, de 14 años, fuera de una zona militar de cuarentena.
+                Sin embargo, lo que comienza como un pequeño trabajo, se convierte en un viaje brutal a través del país.</p>
+			<img src="img/tlou1.png" alt="Juego 1">
+            <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Parte_I/" class="info-button">
+                <img src="img/steam_logo.png" alt="Steam">
+                <span>Comprar Juego</span>
+            </a>
+        </section>
+        <section class="game">
+            <h2>Days Gone</h2>
+            <p>Ponte en los zapatos salpicados de barro del otrora forajido Deacon St. John, un motero cazarrecompensas que intenta buscar una razón
+               por la que vivir en una tierra rodeada de muerte. Registra asentamientos abandonados en busca de equipamiento para crear armas y objetos valiosos
+               o arriésgate a tratar con otros supervivientes que se ganan la vida a duras penas mediante intercambios justos u otros métodos más violentos.</p>
+            <img src="img/daysgone.png" alt="Juego 2">
+            <a href="https://store.steampowered.com/app/1259420/Days_Gone/" class="info-button">
+                <img src="img/steam_logo.png" alt="Steam">
+                <span>Comprar Juego</span>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | Adrián Ibarra Faura</p>
+    </footer>
+</body>
+
+</html>

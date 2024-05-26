@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Videojuegos Gratis de la Semana</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos Gratis de la Semana</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/adrianlogo.png" type="image/x-icon">
 </head>
 <body>
@@ -14,77 +14,86 @@
 
         <ul>
             <li class="dropdown">
-                <a href="#">Paginas Videojuegos</a>
+                <a href="#">Páginas Videojuegos</a>
                 <ul class="dropdown-menu">
-                <li><a href="https://store.steampowered.com/">Steam</a></li>
-				<li><a href="https://store.epicgames.com/es-ES/">Epic Games</a></li>
-				<li><a href="https://www.ubisoft.com/es-es/">Ubisoft</a></li>
-				<li><a href="https://www.gog.com/en/">GoG</a></li>
+                    <li><a href="https://store.steampowered.com/">Steam</a></li>
+                    <li><a href="https://store.epicgames.com/es-ES/">Epic Games</a></li>
+                    <li><a href="https://www.ubisoft.com/es-es/">Ubisoft</a></li>
+                    <li><a href="https://www.gog.com/en/">GoG</a></li>
+                    <li><a href="https://store.rockstargames.com/es">Rockstar Games</a></li>
                 </ul>
             </li>
             <li><a href="aboutus.html">Acerca de la Página</a></li>
+            <li><a href="AAA.html">Videojuegos Triple AAA</a></li>
         </ul>
+        <img src="img/gamingdog.gif" alt="gamingdog">
+
+
+    <div class="circle-animation">
+        <p>¡¡¡GRATIS!!!</p> <!-- Texto dentro del círculo -->
+    </div>
+
+
+        <!-- Formulario de Suscripción al Boletín -->
         <div class="newsletter">
             <h3>Suscríbete al boletín</h3>
-            <form action="#" method="post">
+            <form action="suscripcion.php" method="post">
                 <input type="email" name="email" placeholder="Correo electrónico" required>
-                <input type="submit" value="Suscribir">
+                <input type="submit" value="Suscribirse">
             </form>
         </div>
     </nav>
-	<header>
-		<h1>Videojuegos Gratis de la Semana</h1>
-		<h3>Semana del 29/04/2024 - 06/05/2024</h3>
-		
-	</header>
-	<main>
-		<section class="game">
-			<h2>Grand Thef Auto V</h2>
-			<p>GTA 5 es la quinta entrega de la exitosa saga de videojuegos sandbox desarrollada por Rockstar Games, Grand Theft Auto.
-				Con millones de ventas a sus espaldas y uno de los mundos abiertos más ricos hasta la fecha</p>
-			<img src="img/gta.jpg" alt="Juego 1">
-            <a href="https://store.epicgames.com/es-ES/p/grand-theft-auto-v" class="info-button">
+
+    <header>
+        <div class="header-content">
+            <div class="header-title">
+                <h1>Videojuegos Gratis de la Semana</h1>
+                <h3>Semana del 16/05/2024 - 23/05/2024</h3>
+            </div>
+            <!-- Formulario de Inicio de Sesión -->
+            <div class="login">
+                <form action="login.php" method="post">
+                    <input type="text" name="username" placeholder="Nombre de usuario" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="game">
+            <h2>Dragon Age: Inquisition - Game of the Year Edition</h2>
+            <p>En este juego, tú eres el Inquisidor, encargado de salvar el mundo de Thedas de sí mismo. El camino por delante está plagado de decisiones difíciles que te harán elegir entre la justicia y la ambigüedad.</p>
+            <img src="img/DragonAge.png" alt="Juego 1">
+            <a href="https://store.epicgames.com/es-ES/p/dragon-age-inquisition-game-of-the-year-edition-2f0cbd" class="info-button">
                 <img src="img/epicgames_logo.png" alt="Epic Games">
                 <span>Reclamar Juego</span>
             </a>
         </section>
 
         <section class="game">
-            <h2>Tom Clancy's Rainbow Six: Siege</h2>
-            <p>Tom Clancy's Rainbow Six: Siege es un videojuego de disparos táctico en línea
-                en el que cada jugador asume el control de un atacante o un defensor en diferentes modos de juego, como rescatar a un rehén, desactivar una bomba y tomar el control de un objetivo dentro de una habitación.</p>
-            <img src="img/r6.jpg" alt="Juego 2">
-            <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/" class="info-button">
+            <h2>ENDLESS™ Legend</h2>
+            <p>ENDLESS™ Legend es un juego de estrategia y fantasía 4x basado en turnos. El objetivo del juego es dominar el mundo de Auriga con una de las catorce razas/facciones a través de la diplomacia o la guerra, desarrollando nuevas tecnologías, explorando nuevos territorios y fundando nuevas ciudades.</p>
+            <img src="img/ENDLESS.png" alt="Juego 2">
+            <a href="https://store.steampowered.com/app/289130/ENDLESS_Legend/#ENDLESS-Legend" class="info-button">
                 <img src="img/steam_logo.png" alt="Steam">
                 <span>Reclamar Juego</span>
             </a>
         </section>
 
         <section class="game">
-            <h2>Far Cry 6: Gold Edition</h2>
-            <p>En Far Cry 6, encarna a un habitante de Yara 
-                y lucha usando tácticas de guerrilla y armas extravagantes para liberar a tu nación.</p>
-            <img src="img/farcry6.png" alt="Juego 3">
-            <a href="https://store.epicgames.com/es-ES/p/far-cry-6"  class="info-button">
-                <img src="img/epicgames_logo.png" alt="Epic Games">
-                <span>Reclamar Juego</span>
-            </a>
-        </section>
-
-        <section class="game">
-            <h2>Rayman Legends</h2>
-            <p>Rayman Legends es un videojuego de plataformas desarrollado por Ubisoft Montpellier y publicado por Ubisoft.
-                 Es el quinto título principal de la serie Rayman y la secuela directa del juego de 2011 Rayman Origins</p>
-            <img src="img/raymanl.png" alt="Juego 4">
-            <a href="https://store.ubisoft.com/es/rayman-legends/5704fac688a7e32b078b4674.html"  class="info-button">
-                <img src="img/ubisoft.png" alt="Ubisoft">
+            <h2>100% Orange Juice</h2>
+            <p>100% Orange Juice es un juego de tablero digital multijugador, en el que los 2-4 jugadores se turnan para lanzar un dado y determinar cuántos espacios pueden moverse por la tabla. Dependiendo del espacio en el que aterricen, los jugadores pueden ganar o perder estrellas, teletransportarse a una ubicación aleatoria, participar en batallas con enemigos o robar cartas de una baraja central. El juego requiere estrategia y suerte, lo que lo convierte en una experiencia divertida y entretenida para los jugadores.</p>
+            <img src="img/orangejuice.png" alt="Juego 3">
+            <a href="https://store.steampowered.com/app/282800/100_Orange_Juice/#100-Orange-Juice"  class="info-button">
+                <img src="img/steam_logo.png" alt="Steam">
                 <span>Reclamar Juego</span>
             </a>
         </section>
     </main>
 
     <hr class="separator">
-    <!-- Sección de juegos anteriores -->
     <section class="previous-games">
         <h2>Juegos Gratis de Semanas Anteriores</h2>
         <table>
@@ -99,7 +108,7 @@
                 <tr>
                     <td>1/04/2024 - 8/04/2024 </td>
                     <td>Among Us</td>
-                    <td>Epic games</td>
+                    <td>Epic Games</td>
                 </tr>
                 <tr>
                     <td>8/04/2024 - 15/04/2024</td>
@@ -113,11 +122,9 @@
                 </tr>
                 <tr>
                     <td>22/04/2024 - 29/04/2024</td>
-                    <td>Shadow of the Tom Raider</td>
+                    <td>Shadow of the Tomb Raider</td>
                     <td>Epic Games</td>
                 </tr>
-                <tr>
-                   
                 <!-- Agregar más -->
             </tbody>
         </table>
