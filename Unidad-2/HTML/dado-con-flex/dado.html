@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Strict//EN" "http://www.w3.org/TR/html1/DTD/html1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/html" lang="es" xml:lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="author" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Dado con Flex</title>
+        <style type="text/css">
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 850px;
+                height: 550px;
+                background: linear-gradient(#2E77BC, #0B610B);
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cara {
+                width: 180px;
+                height: 180px;
+                background-color: #E6E6E6;
+                border-radius: 25px;
+                border: 1px solid gray;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                position: relative;
+            }
+
+            .circulo {
+                width: 45px;
+                height: 45px;
+                background-color: gray;
+                border-radius: 50%;
+            }
+
+            .uno .circulo {
+                position: absolute;
+            }
+
+            .dos .circulo:nth-child(1) {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            .dos .circulo:nth-child(2) {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .tres .circulo:nth-child(1) {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            .tres .circulo:nth-child(2) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .tres .circulo:nth-child(3) {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .cuatro .circulo:nth-child(1),
+            .cuatro .circulo:nth-child(2),
+            .cuatro .circulo:nth-child(3),
+            .cuatro .circulo:nth-child(4) {
+                position: absolute;
+            }
+
+            .cuatro .circulo:nth-child(1) {
+                top: 20px;
+                left: 20px;
+            }
+
+            .cuatro .circulo:nth-child(2) {
+                top: 20px;
+                right: 20px;
+            }
+
+            .cuatro .circulo:nth-child(3) {
+                bottom: 20px;
+                left: 20px;
+            }
+
+            .cuatro .circulo:nth-child(4) {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .cinco .circulo:nth-child(1),
+            .cinco .circulo:nth-child(2),
+            .cinco .circulo:nth-child(3),
+            .cinco .circulo:nth-child(4),
+            .cinco .circulo:nth-child(5) {
+                position: absolute;
+            }
+
+            .cinco .circulo:nth-child(1) {
+                top: 20px;
+                left: 20px;
+            }
+
+            .cinco .circulo:nth-child(2) {
+                top: 20px;
+                right: 20px;
+            }
+
+            .cinco .circulo:nth-child(3) {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .cinco .circulo:nth-child(4) {
+                bottom: 20px;
+                left: 20px;
+            }
+
+            .cinco .circulo:nth-child(5) {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .seis .circulo:nth-child(1),
+            .seis .circulo:nth-child(2),
+            .seis .circulo:nth-child(3),
+            .seis .circulo:nth-child(4),
+            .seis .circulo:nth-child(5),
+            .seis .circulo:nth-child(6) {
+                position: absolute;
+            }
+
+            .seis .circulo:nth-child(1) {
+                top: 20px;
+                left: 20px;
+            }
+
+            .seis .circulo:nth-child(2) {
+                top: 20px;
+                right: 20px;
+            }
+
+            .seis .circulo:nth-child(3) {
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+            }
+
+            .seis .circulo:nth-child(4) {
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+            }
+
+            .seis .circulo:nth-child(5) {
+                bottom: 20px;
+                left: 20px;
+            }
+
+            .seis .circulo:nth-child(6) {
+                bottom: 20px;
+                right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="cara uno">
+                <div class="circulo"></div>
+            </div>
+            <div class="cara dos">
+                <div class="circulo"></div><div class="circulo"></div>
+            </div>
+            <div class="cara tres">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+            </div>
+            <div class="cara cuatro">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+            </div>
+            <div class="cara cinco">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+                <div class="circulo"></div>
+            </div>
+            <div class="cara seis">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+                <div class="circulo"></div><div class="circulo"></div>
+            </div>
+        </div>
+    </body>
+</html>
