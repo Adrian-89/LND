@@ -1,114 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Tables</title>
-    <link rel="stylesheet" href="./style.css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-</head>
-   
-<body>
-
-    <table border="1px" class="calificaciones-desktop">
-        <tr>
-            <th> Nombre</th> <th> Apellido1</th> <th> Apellido2 </th> <th> LND </th> <th> BAE </th> <th> PRO </th>
-        </tr>
-        <tr>
-            <td> María Cristina</td> <td> Martínez</td> <td> Abellanosa</td><td> 8.25 </td> <td> 7.25 </td> <td> 6.25 </td>
-        </tr>
-        <tr>
-            <td> Sara</td> <td> Delgado</td> <td>Alemán </td><td> 9.25 </td> <td> 9.25 </td> <td> 7.25 </td>
-        </tr>
-        <tr>
-            <td> Lidia Ángeles</td> <td> González</td> <td> García</td><td> 9.99 </td> <td> 9.88 </td> <td> 8.25 </td>
-        </tr>
-    </table>
-
-    <div class="calificaciones-mobile">
-
-        <div class="fila">
-            <div class="columna">
-                <div class="header">Nombre:</div>
-                <div class="contenido">María Cristina</div>
-            </div>
-            <div class="columna">
-                <div class="header">Apellido1:</div>
-                <div class="contenido">Martínez</div>
-            </div>
-            <div class="columna">
-                <div class="header">Apellido2:</div>
-                <div class="contenido">Abellanosa</div>
-            </div>
-            <div class="columna">
-                <div class="header">LND:</div>
-                <div class="contenido">8.25</div>
-            </div>
-            <div class="columna">
-                <div class="header">BAE:</div>
-                <div class="contenido">7.25</div>
-            </div>
-            <div class="columna">
-                <div class="header">PRO:</div>
-                <div class="contenido">6.25</div>
-            </div>
-        </div>
-
-        <div class="fila">
-            <div class="columna">
-                <div class="header">Nombre:</div>
-                <div class="contenido">Sara</div>
-            </div>
-            <div class="columna">
-                <div class="header">Apellido1:</div>
-                <div class="contenido">Delgado</div>
-            </div>
-            <div class="columna">
-                <div class="header">Apellido2:</div>
-                <div class="contenido">Alemán</div>
-            </div>
-            <div class="columna">
-                <div class="header">LND:</div>
-                <div class="contenido">9.25</div>
-            </div>
-            <div class="columna">
-                <div class="header">BAE:</div>
-                <div class="contenido">9.25</div>
-            </div>
-            <div class="columna">
-                <div class="header">PRO:</div>
-                <div class="contenido">7.25</div>
-            </div>
-        </div>
-
-        <div class="fila">
-            <div class="columna">
-                <div class="header">Nombre:</div>
-                <div class="contenido">Lidia Ángeles</div>
-            </div>
-            <div class="columna">
-                <div class="header">Apellido1:</div>
-                <div class="contenido">González</div>
-            </div>
-            <div class="columna">
-                <div class="header">Apellido2:</div>
-                <div class="contenido">García</div>
-            </div>
-            <div class="columna">
-                <div class="header">LND:</div>
-                <div class="contenido">9.99</div>
-            </div>
-            <div class="columna">
-                <div class="header">BAE:</div>
-                <div class="contenido">9.88</div>
-            </div>
-            <div class="columna">
-                <div class="header">PRO:</div>
-                <div class="contenido">8.25</div>
-            </div>
-        </div>
-
-    </div>
-
-</body>
+        <title>Tabla a texto</title>
+        
+        <style type="text/css" >
+            .calificaciones {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            .calificaciones th, .calificaciones td {
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+            }
+            
+            /* Estilos para pantallas pequeñas */
+            @media screen and (max-width: 800px) {
+                .calificaciones, .calificaciones tbody, .calificaciones tr, .calificaciones td {
+                    display: block;
+                    width: 100%;
+                }
+                
+                .calificaciones tr {
+                    margin-bottom: 15px;
+                }
+                
+                .calificaciones td {
+                    text-align: right;
+                    padding-left: 50%;
+                    position: relative;
+                }
+                
+                .calificaciones td::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 10px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-weight: bold;
+                }
+                
+                .calificaciones th {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1px" class="calificaciones">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido1</th>
+                    <th>Apellido2</th>
+                    <th>LND</th>
+                    <th>BAE</th>
+                    <th>PRO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Nombre">María Cristina</td>
+                    <td data-label="Apellido1">Martínez</td>
+                    <td data-label="Apellido2">Abellanosa</td>
+                    <td data-label="LND">8.25</td>
+                    <td data-label="BAE">7.25</td>
+                    <td data-label="PRO">6.25</td>
+                </tr>
+                <tr>
+                    <td data-label="Nombre">Sara</td>
+                    <td data-label="Apellido1">Delgado</td>
+                    <td data-label="Apellido2">Alemán</td>
+                    <td data-label="LND">9.25</td>
+                    <td data-label="BAE">9.25</td>
+                    <td data-label="PRO">7.25</td>
+                </tr>
+                <tr>
+                    <td data-label="Nombre">Lidia Ángeles</td>
+                    <td data-label="Apellido1">González</td>
+                    <td data-label="Apellido2">García</td>
+                    <td data-label="LND">9.99</td>
+                    <td data-label="BAE">9.88</td>
+                    <td data-label="PRO">8.25</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
 </html>
